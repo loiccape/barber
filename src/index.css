@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'custom';
+  src: url('./assets/fonts/title.otf') format('opentype');
+}
+
