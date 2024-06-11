@@ -1,7 +1,7 @@
 import React from 'react';
 import Price from '../components/Price';
 import { Link } from 'react-router-dom';
-
+import siedel from '../assets/images/siedel.webp'
 export default function ListSalon() {
   const menPriceList = React.useMemo(() => [
     { name: "Coupe classique", price: "16€" },
@@ -25,7 +25,7 @@ export default function ListSalon() {
         Le Barber a votre service
       </p>
 
-      <div className=' mt-16 md:w-full lg:w-3/4 mx-auto flex flex-col '>
+      <div className=' mt-10 md:w-full lg:w-3/4 mx-auto flex flex-col '>
         <div className=' flex flex-col md:flex-row'>
           <div className='flex flex-col md:w-1/2  p-4'>
 
@@ -35,7 +35,7 @@ export default function ListSalon() {
             ))}
           </div>
 
-          <div className='mt-4 md:mt-0 md:w-1/2 h-56 md:h-auto   bg-center bg-cover rounded-xl'  style={{ backgroundImage: "url('https://uploads.lebonbon.fr/source/2022/november/18213/barbier-lyon_1_2000.jpg')" }}></div>
+          <img src={siedel} className='mt-4 md:mt-0 md:w-1/2 h-56 md:h-auto  rounded-xl object-cover'  alt="coupe de barbe"/>
         </div>
 
         <p className='text-3xl mt-8 text-end'>Enfants</p>
